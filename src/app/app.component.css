@@ -81,6 +81,10 @@ li {
 
 /* Phones */
 @media only screen and (max-width: 650px) {
+    .logo {
+        border: none;
+    }
+    
     .sign-in {
         display: none;
     }

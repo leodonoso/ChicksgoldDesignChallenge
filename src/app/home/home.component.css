@@ -18,10 +18,15 @@ h1 {
     margin-bottom: 1em;
     background-color: var(--bg-color-transparent);
     border-radius: 4px;
+    min-width: 180px;
 }
 
 .pencil-icon {
     width: 1.8em; height: 1.8em;
+}
+
+.phone-arrow {
+    display: none;
 }
 
 .nav-select p {
@@ -64,11 +69,14 @@ h1 {
 .nav-search--container {
     display: flex;
     flex: 4;
+    margin-left: 0.5em;
 }
 
 .nav-search--price {
     display: flex;
     flex: 1;
+    min-width: 120px;
+    justify-content: space-between;
 }
 
 .nav-search-section .text {
@@ -90,12 +98,42 @@ h1 {
 .nav-search--items {
     display: flex;
     flex: 1;
+    min-width: 120px;
+    justify-content: space-between;
+    margin-right: 1em;
+}
+
+.nav-search--price .text {
+    flex: 2;
+}
+
+.nav-search--items .text {
+    flex: 2;
 }
 
 .green {
     color: var(--green);
     padding-left: 0.4em;
     border-left: 1px var(--blue) solid;
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 780px) {
+    .nav-search--price, .nav-search--items {
+        display: none;
+    }
+
+    .search {
+        flex: 4;
+    }
+
+    .phone-arrow {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+        padding-right: 0.5em;
+    }    
 }
 
 /* Main Grid */
