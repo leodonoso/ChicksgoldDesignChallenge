@@ -2,6 +2,7 @@
 :root {
     --nav-color: #303141;
     --bg-color: #3e3f4c;
+    --bg-color-transparent: rgba(81, 141, 165, 0.1);
     --card-color: #323648;
     --quantity-color: #373c51;
     --footer-color: #2b2c3b;

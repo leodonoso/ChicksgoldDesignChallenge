@@ -5,38 +5,101 @@ h1 {
 
 .home-nav {
     display: flex;
+    gap: 1em;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .nav-select {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    margin-bottom: 1em;
+    background-color: var(--bg-color-transparent);
+    border-radius: 4px;
+}
+
+.pencil-icon {
+    width: 1.8em; height: 1.8em;
+}
+
+.nav-select p {
+    font-weight: 500;
+    margin-top: 1em;
+    margin-left: 1.8em;
+    flex: 4;
+}
+
+.nav-select mat-icon {
+    font-size: 1.6em;
+    padding-left: 0.2em;
+    flex: 1;
+    margin: 0 0.3em;
 }
 
 .nav-search-section {
+    margin-bottom: 1em;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 4;
+    opacity: 1;
+    background-color: var(--bg-color-transparent);
+    border-radius: 4px;
+}
+
+.nav-search-section mat-icon {
+    width: 1em; height: 1em;
+    margin: auto 0;
+    margin-left: 0.2em;
+}
+
+.nav-search-section .search {
+    margin: auto 0;
+    margin-left: 0.6em;
+    color: var(--lightgray);
 }
 
 .nav-search--container {
     display: flex;
+    flex: 4;
 }
 
 .nav-search--price {
     display: flex;
+    flex: 1;
+}
+
+.nav-search-section .text {
+    margin-top: 1em;
+    line-height: 0.1em;
+    padding: 0 0.6em;
+}
+
+.nav-search-section .text-small {
+    font-size: 0.5em;
+    color: var(--lightgray);
+    margin-bottom: 1.4em;
+}
+
+.nav-search-section .text-big {
+    color: var(--white);
 }
 
 .nav-search--items {
     display: flex;
+    flex: 1;
 }
 
-/* Grid Header */
-.grid-header {
-    display: flex;
+.green {
+    color: var(--green);
+    padding-left: 0.4em;
+    border-left: 1px var(--blue) solid;
 }
 
-.grid-sort {
-    display: flex;
-}
-
-.home-grid {
+/* Main Grid */
+.main-grid {
     background-color: var(--nav-color);
     border: 1px var(--blue) solid;
     border-radius: 4px;
@@ -47,6 +110,67 @@ h1 {
     box-shadow: 0px 0px 20px 0px var(--darkgray);
 
     margin-bottom: 5em;
+}
+
+/* Grid Header */
+.grid-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 94%;
+    height: 5em;
+    margin: auto;
+}
+
+.grid-header .showing {
+    color: var(--lightgray);
+}
+
+.grid-sort {
+    min-height: 3em;
+    background-color: var(--card-color);
+    display: flex;
+    gap: 0.6em;
+    align-items: center;
+}
+
+.list-icon {
+    width: 1.8em; height: 1.8em;
+    padding: 0.2em;
+    padding-left: 0.8em;
+}
+
+.list-icon mat-icon {
+    color: var(--green);
+}
+
+.grid-sort--text {
+    margin-top: 0.8em;
+}
+
+.grid-sort--text p {
+    line-height: 0.1em;
+}
+
+.text-smaller {
+    font-size: 0.5em;
+    color: var(--lightgray);
+}
+
+.text-big {
+    color: var(--white);
+    font-size: 0.7em;
+}
+
+.arrow-icon {
+    width: 1.8em; height: 1.8em;
+    padding: 0.2em;
+    padding-left: 0.8em;
+}
+
+.arrow-icon mat-icon {
+    margin-top: 0.3em;
+    font-size: medium;
 }
 
 /* Cards Grid */
