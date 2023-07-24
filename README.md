@@ -1,6 +1,14 @@
-# ChicksgoldDesignChallenge
+# Chicksgold Design Challenge
+
+This was a design challenge I performed as a technical test, as a part of my application process for Chicksgold.com. I was handed a PDF file that I had to replicate using vanilla CSS.
+
+Most of the project is just vanilla CSS, I only used Angular to help me with the structure of the document and for the easy access to the icons from Material Icons.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.5.
+
+## Structure
+
+This project features only two components, a Home component and an App component. Most of the code written for this project can be found in these two components and in the `styles.css` file, located in the root directory.
 
 ## Development server
 
