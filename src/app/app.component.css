@@ -99,7 +99,6 @@ li {
 
 }
 
-
 /* Home */
 .home-container {
     margin: auto;
@@ -109,7 +108,7 @@ li {
 .bg-img {
     z-index: -1;
     opacity: 0.2;
-    width: 250%; height: 250%;
+    width: 300%; height: 300%;
     position: absolute;
     overflow: hidden;
 }
@@ -119,9 +118,23 @@ li {
     height: 100%; width: 100%;
 }
 
+/* Responsive Design */
+@media only screen and (max-width: 1000px) {
+    .bg-img {
+        width: 350vw; height: 350vh;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .bg-img {
+        width: 550vw; height: 550vh;
+    }
+}
+
 /* Footer */
 footer {
     display: flex;
+    width: 100%;
     flex-direction: column;
     background-color: var(--nav-color);
 }
@@ -153,6 +166,30 @@ footer {
     color: var(--lightgray);
     margin-left: 0.5rem;
     margin-top: 1.5rem;
+}
+
+/* Sponsors Responsive Design */
+
+/* Tablets */
+@media only screen and (max-width: 850px) {
+    .sponsor-logo {
+        display: none;
+    }
+
+    .tablet-responsive {
+        display: inline;
+    }
+}
+
+/* Phones */
+@media only screen and (max-width: 650px) {
+    .tablet-responsive {
+        display: none;
+    }
+
+    .phone-responsive {
+        display: inline;
+    }
 }
 
 /* Social Icons */
@@ -218,4 +255,19 @@ footer {
     margin: 3rem;
     margin-top: 0.5rem;
     text-align: center;
+}
+
+/* Footer Responsive Design */
+/* Tablets */
+@media only screen and (max-width: 1080px) {
+    .footer-nav {
+        grid-template-columns: repeat(3, 1fr)
+    }
+}
+
+/* Phones */
+@media only screen and (max-width: 650px) {
+    .footer-nav {
+        grid-template-columns: repeat(2, 1fr)
+    }
 }

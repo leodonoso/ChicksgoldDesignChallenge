@@ -30,8 +30,8 @@
   <div class="sponsors">
     <div class="container flex-row">
       <ul *ngIf="sponsorLogos" class="sponsor-container">
-        <li *ngFor="let logo of sponsorLogos" class="sponsor-logo">
-          <img class="sponsor" src="{{ logo.url }}" alt="{{ logo.name }}">
+        <li *ngFor="let logo of sponsorLogos" class="sponsor-logo" [class.phone-responsive]="logo.phone" [class.tablet-responsive]="logo.tablet">
+          <img class="sponsor" src="{{ logo.url }}" alt="{{ logo.name }}" >
         </li>
       </ul>
       <p>and 50+ more</p>
