@@ -1,3 +1,4 @@
+<!-- Navbar / Header -->
 <header class="flex-row">
   <a class="logo" routerLink="/" >CHICKS GOLD</a>
   <ul class="flex-row" style="flex: 3;">
@@ -15,46 +16,69 @@
   </ul>
 </header>
 
+<!-- Background Image -->
 <div class="bg-img"><img src="../../assets/bg-image.jpg" alt=""></div>
 
-<div class="home-container"><router-outlet></router-outlet></div>
+<!-- Home Section -->
+<div class="container">
+  <div class="home-container"><router-outlet></router-outlet></div>
+</div>
 
+<!-- Footer -->
 <footer>
   <div class="sponsors">
-    <!-- Loop through list of images -->
-    <p>and 50+ more</p>
+    <div class="container sponsors">
+      <ul *ngIf="sponsorLogos" class="sponsor-container">
+        <li *ngFor="let logo of sponsorLogos" class="sponsor-logo">
+          <img class="sponsor" src="{{ logo.url }}" alt="{{ logo.name }}">
+        </li>
+      </ul>
+      <p>and 50+ more</p>
+    </div>
   </div>
 
-  <div class="socials">
-    <!-- Loop through social media list -->
+  <div class="container socials">
+    <ul *ngIf="socialLogos" class="social-container">
+      <li *ngFor="let logo of socialLogos" class="social-logo"  [style]="logo.style">
+        <img class="sponsor" src="{{ logo.url }}" alt="{{ logo.name }}">
+      </li>
+    </ul>
   </div>
 
-  <div class="navigation">
-    <div class="container">
-      <a class="logo" routerLink="/">CHICKS GOLD</a>
+
+  <div class="footer-nav container">
+    <div class="footer-container">
+      <p class="footer-header">CHICKS GOLD</p>
       <a href="#">support@chicksgold.com</a>
     </div>
-    <div class="container">
-      <a href="#">Chicks Gold</a>
+    <div class="footer-container">
+      <p class="footer-header">Chicks Gold</p>
       <a href="#">Games</a>
       <a href="#">About Us</a>
       <a href="#">Blog</a>
       <a href="#">Sitemap</a>
     </div>
-    <div class="container">
-      <a href="#">Support</a>
+    <div class="footer-container">
+      <p class="footer-header">Support</p>
       <a href="#">Contact Us</a>
       <a href="#">FAQ</a>
     </div>
-    <div class="container">
-      <a href="#">Legal</a>
+    <div class="footer-container">
+      <p class="footer-header">Legal</p>
       <a href="#">Privacy Policy</a>
       <a href="#">Terms of Service</a>
       <a href="#">Copyright Policy</a>
     </div>
-    <div class="container">
-      <p>Trustpilot Reviews</p>
+    <div class="footer-container">
+      <div>
+        <mat-icon>star</mat-icon>
+        <mat-icon>star</mat-icon>
+        <mat-icon>star</mat-icon>
+        <mat-icon>star</mat-icon>
+        <mat-icon>star</mat-icon>
+      </div>
+      <a href="#">Trustpilot Reviews</a>
     </div>
   </div>
-  <p>© 2017 - 2020 Chicksgold.com. All rights Reserved</p>
+  <p class="copyright">© 2017 - 2020 Chicksgold.com. All rights Reserved</p>
 </footer>

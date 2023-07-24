@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ImageExporterService } from './image-exporter.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ChicksgoldDesignChallenge';
+  constructor(private _imageExporter: ImageExporterService) { }
+
+  sponsorLogos = this._imageExporter.sponsorLogos
+  socialLogos = this._imageExporter.socialLogos
 }
