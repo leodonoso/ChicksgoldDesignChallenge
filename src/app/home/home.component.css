@@ -345,3 +345,39 @@ h1 {
     max-width: 1em; max-height: 1em;
     font-size: medium;
 }
+
+/* Cards Grid Pages */
+.card-pages {
+    padding: 0;
+    margin: 1.4em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pages-num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.4em; height: 2.4em;
+    margin: 0.4em;
+    background-color: var(--nav-color);
+    border-radius: 4px;
+    color: var(--white);
+}
+
+.pages-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.1rem; height: 2.1rem;
+    margin: 0.5em 0.6em;
+    background-color: var(--nav-color);
+    border-radius: 4px;
+    border: 1px var(--purple) solid;
+    color: var(--white);
+}
+
+.active {
+    background-color: var(--purple);
+}

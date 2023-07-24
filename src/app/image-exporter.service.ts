@@ -41,14 +41,12 @@ export class ImageExporterService {
   ]
 
   homePages: any = [
-    {customHTML: '<mat-icon>keyboard_arrow_left</mat-icon>'},
-    {customHTML: '<p>1</p>'},
-    {customHTML: '<p>2</p>'},
-    {customHTML: '<p>3</p>'},
-    {customHTML: '<p>4</p>'},
-    {customHTML: '<p>...</p>'},
-    {customHTML: '<p>11</p>'},
-    {customHTML: '<mat-icon>keyboard_arrow_right</mat-icon>'},
+    {text: '1', active: true},
+    {text: '2', active: false},
+    {text: '3', active: false},
+    {text: '4', active: false},
+    {text: '...', active: false},
+    {text: '11', active: false},
   ]
 
   constructor() { }

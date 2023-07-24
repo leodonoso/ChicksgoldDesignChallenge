@@ -53,9 +53,14 @@ li {
 .bg-img {
     z-index: -1;
     opacity: 0.2;
-    width: 200vw; height: 200vh;
+    width: 250%; height: 250%;
     position: absolute;
     overflow: hidden;
+}
+
+.bg-img img {
+    object-fit: cover;
+    height: 100%; width: 100%;
 }
 
 /* Footer */
@@ -71,6 +76,7 @@ footer {
     align-items: flex-start;
     background-color: var(--footer-color);
     height: 72px;
+    border-top: 3px var(--nav-color) solid;
 }
 
 .sponsor-container {

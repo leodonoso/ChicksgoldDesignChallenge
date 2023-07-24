@@ -99,11 +99,16 @@
 
         <!-- Grid Pages -->
         <div class="grid-pages">
-            <!-- 9 cuadritos -->
+            <ul class="card-pages" *ngIf="homePages">
+                <mat-icon  class="pages-arrow">keyboard_arrow_left</mat-icon>
+                <li class="pages-num" *ngFor="let page of homePages" [class.active]="page.active">
+                    {{ page.text }}
+                </li>
+                <mat-icon class="pages-arrow">keyboard_arrow_right</mat-icon>
+            </ul>
         </div>
     </div>
 </div>
 
 <!-- TO DO -->
 <!-- Responsive Design -->
-<!-- Card Pages section -->
