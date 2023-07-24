@@ -1,3 +1,101 @@
-<div>
+<div class="home">
     <h1 class="text">Condimentum consectetur </h1>
+
+    <!-- Home Navbar -->
+    <div class="home-nav">
+        <div class="nav-select">
+            <mat-icon>videogame_asset</mat-icon>
+            <p class="text-big">Select Game</p>
+            <mat-icon>keyboard_arrow_down</mat-icon>
+        </div>
+        <div class="nav-search-section">
+            <div class="nav-search--container">
+                <mat-icon>search</mat-icon>
+                <p class="text-big">Search</p>
+            </div>
+            <div class="nav-search--price">
+                <mat-icon>attach_money</mat-icon>
+                <p class="text-small">Price</p>
+                <p class="text-big">All</p>
+                <mat-icon>keyboard_arrow_down</mat-icon>
+            </div>
+            <div class="nav-search--items">
+                <mat-icon> bar_chart</mat-icon>
+                <p class="text-small">Item Type</p>
+                <p class="text-big">All</p>
+                <mat-icon>keyboard_arrow_down</mat-icon>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Grid -->
+    <div class="home-grid">
+        <!-- Grid Header -->
+        <div class="grid-header">
+            <p>Showing 20 - from 125</p>
+            <div class="grid-sort">
+                <mat-icon>sort</mat-icon>
+                <div class="grid-sort--text">
+                    <p class="text-small">Sort By</p>
+                    <p class="text-big">Featured</p>
+                </div>
+                <mat-icon>keyboard_arrow_down</mat-icon>
+            </div>
+        </div>
+
+        <!-- Cards Grid -->
+        <ul class="cards-grid" *ngIf="homeProps">
+            <li *ngFor="let prop of homeProps" class="card">
+
+                <!-- Card Header -->
+                <div class="card-header">
+                    <div class="header-on-sale">
+                        <div class="flex-row green-circle--container">
+                            <div class="green-circle"></div>
+                            <p>ON SALE</p>
+                        </div>
+                        <p class="text-small in-stock">In Stock</p>
+                    </div>
+                    <div class="header-quantity">
+                        <p>1</p>
+                        <mat-icon>unfold_more</mat-icon>
+                    </div>
+                </div>
+
+                <!-- Card Icon -->
+                <div class="card-icon">
+                    <img src="{{prop.url}}" alt="{{prop.name}}">
+                </div>
+
+                <!-- Card Title -->
+                <div class="card-title-container">
+                    <h3 class="card-title">Blue Partyhat</h3>
+                    <div class="game-logo"><img src="../../assets/logos/world-of-warcraft-vector-logo.png" alt="World of Warcraft Logo"></div>
+                </div>
+
+                <!-- Card Price -->
+                <div class="card-price-container">
+                    <p class="card-price">$450.00</p>
+                    <p class="card-price--crossed">$522.59</p>
+                </div>
+
+                <!-- Card Description -->
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                <!-- Card Footer -->
+                <div class="card-footer">
+                    <a href="#" class="footer-details">DETAILS</a>
+                    <div class="footer-add-container">
+                        <a href="#" class="footer-add">ADD</a>
+                        <mat-icon>shopping_cart</mat-icon>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <!-- Grid Pages -->
+        <div class="grid-pages">
+            <!-- 9 cuadritos -->
+        </div>
+    </div>
 </div>

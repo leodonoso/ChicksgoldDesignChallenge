@@ -23,9 +23,32 @@ export class ImageExporterService {
   ]
 
   homeProps: any = [
-    {name: 'icon1', url: '../../assets/logos/icon1.png'},
-    {name: 'icon2', url: '../../assets/logos/icon2.png'},
-    {name: 'icon3', url: '../../assets/logos/icon3.png'},
+    {name: 'icon1', url: '../../assets/logos/icon1.jpg'},
+    {name: 'icon2', url: '../../assets/logos/icon2.jpg'},
+    {name: 'icon3', url: '../../assets/logos/icon3.jpg'},
+    {name: 'icon1', url: '../../assets/logos/icon1.jpg'},
+    {name: 'icon2', url: '../../assets/logos/icon2.jpg'},
+    {name: 'icon3', url: '../../assets/logos/icon3.jpg'},
+    {name: 'icon1', url: '../../assets/logos/icon1.jpg'},
+    {name: 'icon2', url: '../../assets/logos/icon2.jpg'},
+    {name: 'icon3', url: '../../assets/logos/icon3.jpg'},
+    {name: 'icon1', url: '../../assets/logos/icon1.jpg'},
+    {name: 'icon2', url: '../../assets/logos/icon2.jpg'},
+    {name: 'icon3', url: '../../assets/logos/icon3.jpg'},
+    {name: 'icon1', url: '../../assets/logos/icon1.jpg'},
+    {name: 'icon2', url: '../../assets/logos/icon2.jpg'},
+    {name: 'icon3', url: '../../assets/logos/icon3.jpg'},
+  ]
+
+  homePages: any = [
+    {customHTML: '<mat-icon>keyboard_arrow_left</mat-icon>'},
+    {customHTML: '<p>1</p>'},
+    {customHTML: '<p>2</p>'},
+    {customHTML: '<p>3</p>'},
+    {customHTML: '<p>4</p>'},
+    {customHTML: '<p>...</p>'},
+    {customHTML: '<p>11</p>'},
+    {customHTML: '<mat-icon>keyboard_arrow_right</mat-icon>'},
   ]
 
   constructor() { }
