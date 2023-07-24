@@ -1,1 +1,90 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --nav-color: #303141;
+    --bg-color: #454659;
+    --footer-color: #2b2c3b;
+}
+
+html { height: 100%; }
+body { 
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    background-color: var(--bg-color);
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    background-color: var(--nav-color);
+    border-bottom: 1.3px #46b7e3 solid;
+}
+
+a, p, .text {
+    color: white;
+    text-decoration: none;
+    font-size: smaller;
+}
+
+.flex-row {
+    display: flex;
+}
+
+li {
+    padding: 0 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+ footer {
+    background-color: var(--nav-color);
+ }
+
+ .sponsors {
+    background-color: var(--footer-color);
+    height: 72px;
+ }
+
+ .home-container {
+    margin: auto;
+    width: 80%;
+    height: 100vh;
+ }
+
+ .bg-img {
+    z-index: -1;
+    opacity: 0.2;
+    width: 100vw; height: 100vh;
+    position: absolute;
+    overflow: hidden;
+ }
+
+ .logo {
+    margin: 10px 8px 10px 16px;
+    padding: 10px 64px 10px 16px;
+    font-size: large;
+    border-right: 1px white solid;
+ }
+
+ mat-icon {
+    color: white;
+ }
+
+ .btn {
+    padding-right: 4px;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    background-color: #1de09c;
+ }
+
+ .btn a, .btn mat-icon {
+    color: var(--nav-color);
+    padding: 0 2px 0 6px;
+ }
+
+ .btn a {
+    font-size: small;
+ }
